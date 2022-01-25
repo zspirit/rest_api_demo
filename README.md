@@ -11,13 +11,13 @@ This WS is handling a user system registration by exposing endpoints to handle d
 - '/confirm' : handle confirmation mecanisme
 
 #Ressources documentation
-| Resource  | Parameters       | Method |  Status Codes | Success Return                                   |
-|---|------------------|--------|---|--------------------------------------------------|
-|healthcheck| -                | GET    |200 – OK| Message of “working fine”                        |
-|dashboard| Username/pwd             | POST   |200 – OK| return data for a specific user                         |
-|register| Username/mail/pwd | POST   |200 – OK| handle user inscription             |
-|confirm| Username/mail | POST   |200 – OK| handle confirmation mecanisme       |
-|update|Username/mail/pwd| POST   |200 – OK| Message of “Message has been saved successfully” |
+| Resource  | Parameters       | Method |  Status Codes | Success Return                                |
+|---|------------------|--------|---|-----------------------------------------------|
+|healthcheck| -                | GET    |200 – OK| Message of “working fine”                     |
+|dashboard| Username/pwd             | POST   |200 – OK| return data for a specific user               |
+|register| Username/mail/pwd | POST   |200 – OK| handle user inscription                       |
+|confirm| Username/mail | POST   |200 – OK| handle confirmation mecanisme                 |
+|update|Username/mail/pwd| POST   |200 – OK| Message of “User has been saved successfully” |
 
 ## Docker and docker-compose
 
