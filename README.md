@@ -10,6 +10,15 @@ This WS is handling a user system registration by exposing endpoints to handle d
 - '/update' : handle personnal user data update
 - '/confirm' : handle confirmation mecanisme
 
+#Ressources documentation
+| Resource  | Parameters       | Method |  Status Codes | Success Return                                   |
+|---|------------------|--------|---|--------------------------------------------------|
+|healthcheck| -                | GET    |200 – OK| Message of “working fine”                        |
+|dashboard| Username/pwd             | POST   |200 – OK| return data for a specific user                         |
+|register| Username/mail/pwd | POST   |200 – OK| Message of “Registration Successful”             |
+|confirm| Username/mail | POST   |200 – OK| List of all messages belonging to the user       |
+|update|Username/mail/pwd| POST   |200 – OK| Message of “Message has been saved successfully” |
+
 ## Docker and docker-compose
 
 Inside the root project you can run
@@ -40,3 +49,4 @@ to force the data to be read as JSON.
 - Do some code refactor/optimisations 
 - Do more TU for specific use-cases
 - Test user input data (valid email, valid username ..)
+
