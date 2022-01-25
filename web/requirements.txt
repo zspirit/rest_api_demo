@@ -1,0 +1,8 @@
+flask
+flask_restful
+pymongo
+bcrypt
+Flask-Mail
+mongomock
+sentinels
+six
